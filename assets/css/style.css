@@ -1,0 +1,24 @@
+html {
+    width: 100%;
+    min-height:101%;
+    background: url('../../assets/images/bg_image.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+  }
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
