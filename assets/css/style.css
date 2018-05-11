@@ -1,11 +1,13 @@
 html {
-    width: 100%;
-    min-height:101%;
+    height: 100%;
     background: url('../../assets/images/bg_image.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+html, body {
 }
 
 body {
@@ -16,9 +18,222 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
-  }
+}
+
+p {
+    line-height: 21px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: #777777;
+    font-size: 13px
+}
+
+a:hover {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 2px 5px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.head_container {
+    width: 960px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.head_container h1 {
+    background: #4aaaa5;
+    height: 60px;
+    padding: 0 36px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 59px;
+}
 
 .container {
+    min-height: calc(100vh - 108px);
+}
+.content {
     width: 960px;
-    margin: 0 auto;
+    margin: 40px auto 40px auto;
+    background: #ffffff;
+}
+
+.navigation {
+    float: right;
+    width:250px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-top: 21px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.navigation li:first-child {
+    width:67px;
+    float:left;
+    text-align: left;
+}
+
+.navigation li:nth-child(2) {
+    width:103px;
+    float:left;
+    text-align: center;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.navigation li:nth-child(3) {
+    width:77px;
+    float:right;
+    text-align: right;
+}
+
+#about, #contact, #portfolio {
+    padding: 44px 30px 30px 42px;
+}
+
+/* start about */
+/*-----------------------------------------------*/
+
+
+#about h2, form h2, #portfolio h2 {
+    font-size: 21px;
+    width: 900px;
+    height: 58px;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 30px;
+}
+
+#about img {
+    float: left;
+    margin-right: 26px;
+}
+
+/* start contact */
+/*-----------------------------------------------*/
+
+
+#contact label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 11px;
+}
+#contact label:not(:first-of-type) {
+    margin-top: 20px;
+}
+#contact textarea,  #contact input {
+    border: 1px solid #dddddd;
+}
+
+#contact input {
+    width: 900px;
+    height: 35px;
+}
+
+#contact input[type = "text"] {
+    font-size: 12px;
+    color: #777777;
+}
+
+#contact textarea {
+    width: 900px;
+    height: 150px;
+    font-size: 12px;
+    color: #777777;
+}
+
+#contact input[type = "submit"] {
+    display: block;
+    border: none;
+    width: 116px;
+    height: 41px;
+    background:#4aaaa5;
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#contact input[type="submit"]:hover {
+    background: #2a8580;
+}
+
+/* start portfolio */
+/*-----------------------------------------------*/
+.port_link {
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    margin: 0 40px 56px 0;
+    /* float: left; */
+}
+
+#gallery {
+    width: 600px;
+}
+
+#gallery :last-child {
+    margin-bottom: 0px;
+}
+
+.port_link p {
+    position: relative;
+    height: 60px;
+    width: 250px;
+    top: 131px;
+    left: 0px;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 16px;
+    cursor: pointer;
+} 
+
+.port_link p:hover {
+    background:#2a8580;
+}
+
+#fab { background: url('../../assets/images/fab.jpg'); }
+#truck { background: url('../../assets/images/truck.jpg'); }
+#micro { background: url('../../assets/images/micro.jpg'); }
+#projects { background: url('../../assets/images/projects.jpg'); }
+#cms { background: url('../../assets/images/cms.jpg'); }
+
+
+/* start footer */
+/*-----------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 68px;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    font-size: 8px;
+    color: #C2C9C8;
+    text-align: center;
+    line-height: 68px;
 }
